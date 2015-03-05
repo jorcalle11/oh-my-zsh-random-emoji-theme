@@ -1,4 +1,4 @@
-oh-my-zsh beer theme [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/shinji62/oh-my-zsh-random-emoji-theme/blob/master/LICENCE)
+oh-my-zsh Emoji theme [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/shinji62/oh-my-zsh-random-emoji-theme/blob/master/LICENCE)
 ====
 
 Take emoji randomly in :sushi: :beer: :space_invader: :sake:
