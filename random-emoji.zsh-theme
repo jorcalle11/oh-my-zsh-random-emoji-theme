@@ -2,15 +2,16 @@
 # Random logic
 #
 
-EMOJIS=(🍣 🍺 👾 🍶)
+EMOJI=(💩 🐦 🚀 🐞 🎨 🍕 🐭 👽 ☕️ 🔬 💀 🐷 🐼 🐶 🐸 🐧 🐳 🍔 🍣 🍻 🔮 💰 💎 💾 💜 🍪 🌞 🌍 🐌 🐓 🍄 🍺 )
 
-
-SEL_EMOJI=${EMOJIS[RANDOM % ${#EMOJIS[@]} - 1 ]}
+function random_emoji {
+  echo -n "$EMOJI[$RANDOM%$#EMOJI+1]"
+}
 
 # -------------------------------
 # general
 # -------------------------------
-PROMPT='$SEL_EMOJI %{$fg[blue]%}%n %{${reset_color}%}'
+PROMPT='$(random_emoji)  %{$fg[blue]%}%n %{${reset_color}%}'
 RPROMPT='%{$fg[yellow]%}➜  %{$fg_bold[cyan]%}%~ %{$fg_bold[blue]%}%{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} %{$reset_color%}'
 PROMPT2="%{${fg[yellow]}%}(%_) >> %{${reset_color}%}"
 SPROMPT="%{${fg[red]}%}correct:%R➜  %r [n y a e]? %{${reset_color}%}"
