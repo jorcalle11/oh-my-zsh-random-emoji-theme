@@ -10,7 +10,7 @@ Take emoji randomly in :sushi: :beer: :space_invader: :sake:
 After installing [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), you can install this by:
 
 ```bash
-$ curl -fsSL https://raw.github.com/shinji62/oh-my-zsh-random-emoji-theme/master/random-emoji.zsh-theme >> ~/.oh-my-zsh/themes/random-emoji.zsh-theme
+$ curl -fsSL https://raw.github.com/jorcalle11/oh-my-zsh-random-emoji-theme/master/random-emoji.zsh-theme >> ~/.oh-my-zsh/themes/random-emoji.zsh-theme
 ```
 
 And configure `.zshrc`:
@@ -21,7 +21,7 @@ ZSH_THEME="random-emoji"
 
 ## Fork
 
-This theme is fork from [beer.zsh-theme](https://github.com/tcnksm/oh-my-zsh-beer-theme/blob/master/beer.zsh-theme). 
+This theme is fork from [random-emoji.zsh-theme](https://github.com/shinji62/oh-my-zsh-random-emoji-theme/blob/master/random-emoji.zsh-theme). 
 
 ## Author
 
