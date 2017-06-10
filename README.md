@@ -1,9 +1,9 @@
 oh-my-zsh Emoji theme [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/shinji62/oh-my-zsh-random-emoji-theme/blob/master/LICENCE)
 ====
 
-Take emoji randomly in :sushi: :beer: :space_invader: :sake:
+Take emoji randomly in 💩 🐦 🚀 🐞 🎨 🍕 🐭 👽 ☕️ 🔬 💀 🐷 🐼 🐶 🐸 🐧 🐳 🍔 🍣 🍻 🔮 💰 💎 💾 💜 🍪 🌞 🌍 🐌 🐓 🍄 🍺
 
-![](https://raw.github.com/shinji62/oh-my-zsh-random-emoji-theme/master/img/beer-theme.png)
+![](screenshot.png)
 
 ## Install
 
