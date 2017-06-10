@@ -8,18 +8,17 @@ function random_emoji {
   echo -n "$EMOJI[$RANDOM%$#EMOJI+1]"
 }
 
+local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
+
 # -------------------------------
 # general
 # -------------------------------
-PROMPT='$(random_emoji)  %{$fg[blue]%}%n %{${reset_color}%}'
-RPROMPT='%{$fg[yellow]%}➜  %{$fg_bold[cyan]%}%~ %{$fg_bold[blue]%}%{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} %{$reset_color%}'
-PROMPT2="%{${fg[yellow]}%}(%_) >> %{${reset_color}%}"
-SPROMPT="%{${fg[red]}%}correct:%R➜  %r [n y a e]? %{${reset_color}%}"
+PROMPT='$(random_emoji)  %{$fg_bold[red]%}%n%{${reset_color}%} ${ret_status} %{$fg[cyan]%}%c%{$reset_color%}$(git_prompt_info) '
 
 # -------------------------------
 # git
 # -------------------------------
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}[%{$fg[cyan]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[green]%}(%{$fg[blue]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%}] %{$fg[yellow]%}⚡%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}]"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[green]%}) %{$fg[yellow]%}⚡%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%})"
